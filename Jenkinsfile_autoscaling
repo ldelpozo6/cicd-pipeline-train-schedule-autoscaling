@@ -4,7 +4,7 @@ node {
         stage('Clone Repo') {
                 git branch: 'master',
                 credentialsId: 'githhub_api_key',
-                url: 'https://github.com/ldelpozo6/cicd-pipeline-train-schedule-selfhealing.git'
+                url: 'https://github.com/ldelpozo6/cicd-pipeline-train-schedule-autoscaling.git'
         }
         stage('Build') {
                 echo 'Running build automation'
